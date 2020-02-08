@@ -1,0 +1,48 @@
+.a2a_kit {
+    a {
+        font-size: rem-calc(18);
+        float: none;
+        display: inline-block;
+        height: rem-calc(34);
+        width: rem-calc(34);
+        border-radius: 50%;
+        border: 1px solid $green;
+        text-align: center;
+        background-color: transparent;
+        transition: all 0.5s;
+        color: $green;
+        line-height: rem-calc(34);
+        margin-right: rem-calc(20);
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $orange;
+            color: $orange;
+        }
+        &:after {
+            display: block;
+            line-height: rem-calc(34);
+            font-family: 'Socicon';
+        }
+        &.a2a_button_facebook:after {
+            content: '\e028';
+        }
+        &.a2a_button_twitter:after {
+            content: '\e08d';
+        }
+        &.a2a_button_pinterest:after {
+            content: '\e063';
+        }
+        &.a2a_button_telegram:after {
+            content: '\e087';
+        }
+        &.a2a_button_vk:after {
+            content: '\e095';
+        }
+        &.a2a_button_facebook_messenger:after {
+            content: '\e906';
+        }
+        &>span {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "handle-counter",
+  "homepage": "https://github.com/nick-running/handle-counter",
+  "_release": "b4b57ec750",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b4b57ec75069ff8520ad2e3bd0b2c81a32d2649e"
+  },
+  "_source": "git://github.com/nick-running/handle-counter.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/nick-running/handle-counter"
+}

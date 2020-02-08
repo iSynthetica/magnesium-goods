@@ -1,0 +1,11 @@
+{"vendor":{"themes/JointsWP":"1.0"},
+	"front-config":{
+		"all-pages":{
+			"filters":{
+				"text":{
+					"joints_post_text_to_translate":"20"
+				}
+			}
+		}
+	}
+}

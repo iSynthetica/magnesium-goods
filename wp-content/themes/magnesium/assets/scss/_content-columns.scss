@@ -1,0 +1,358 @@
+/******************************************************************
+ Stylesheet: Content columns Shortcodes
+ ******************************************************************/
+.cc-row {
+    margin-right: auto;
+    margin-left: auto;
+    &>p, &>br {
+        display: none;
+    }
+    &-inner {
+        margin-right: rem-calc(-15);
+        margin-left: rem-calc(-15);
+        &:before, &:after {
+            display: table;
+            content: ' ';
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    .cc-col {
+        &-inner {
+        }
+        width: 100%;
+        float: left;
+        padding-right: rem-calc(15);
+        padding-left: rem-calc(15);
+        /* Small Mobile Screens < 480 */
+        &.cc-mb-1 {
+            width: 16.66667%;
+        }
+        &.cc-mb-2 {
+            width: 33.33333%;
+        }
+        &.cc-mb-3 {
+            width: 50%;
+        }
+        &.cc-mb-4 {
+            width: 66.66667%;
+        }
+        &.cc-mb-5 {
+            width: 83.33333%;
+        }
+        &.cc-mb-6 {
+            width: 100%;
+        }
+        /* Large Mobile Screens 480 - 639 */
+        @include breakpoint(smedium) {
+            &.cc-mbl-1 {
+                width: 16.66667%;
+            }
+            &.cc-mbl-2 {
+                width: 33.33333%;
+            }
+            &.cc-mbl-3 {
+                width: 50%;
+            }
+            &.cc-mbl-4 {
+                width: 66.66667%;
+            }
+            &.cc-mbl-5 {
+                width: 83.33333%;
+            }
+            &.cc-mbl-6 {
+                width: 100%;
+            }
+        }
+        /* Small Tablet Screens 640 - 839 */
+        @include breakpoint(medium) {
+            &.cc-tb-1 {
+                width: 16.66667%;
+            }
+            &.cc-tb-2 {
+                width: 33.33333%;
+            }
+            &.cc-tb-3 {
+                width: 50%;
+            }
+            &.cc-tb-4 {
+                width: 66.66667%;
+            }
+            &.cc-tb-5 {
+                width: 83.33333%;
+            }
+            &.cc-tb-6 {
+                width: 100%;
+            }
+        }
+        /* Large Tablet Screens 640 - 839 */
+        @include breakpoint(lmedium) {
+            &.cc-tbl-1 {
+                width: 16.66667%;
+            }
+            &.cc-tbl-2 {
+                width: 33.33333%;
+            }
+            &.cc-tbl-3 {
+                width: 50%;
+            }
+            &.cc-tbl-4 {
+                width: 66.66667%;
+            }
+            &.cc-tbl-5 {
+                width: 83.33333%;
+            }
+            &.cc-tbl-6 {
+                width: 100%;
+            }
+        }
+        /* Small Desktop Screens 640 - 839 */
+        @include breakpoint(large) {
+            &.cc-dt-1 {
+                width: 16.66667%;
+            }
+            &.cc-dt-2 {
+                width: 33.33333%;
+            }
+            &.cc-dt-3 {
+                width: 50%;
+            }
+            &.cc-dt-4 {
+                width: 66.66667%;
+            }
+            &.cc-dt-5 {
+                width: 83.33333%;
+            }
+            &.cc-dt-6 {
+                width: 100%;
+            }
+        }
+        /* Large Desktop Screens 640 - 839 */
+        @include breakpoint(xlarge) {
+            &.cc-dtl-1 {
+                width: 16.66667%;
+            }
+            &.cc-dtl-2 {
+                width: 33.33333%;
+            }
+            &.cc-dtl-3 {
+                width: 50%;
+            }
+            &.cc-dtl-4 {
+                width: 66.66667%;
+            }
+            &.cc-dtl-5 {
+                width: 83.33333%;
+            }
+            &.cc-dtl-6 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.cc-newsletter-popup {
+    &>p, &>br {
+        display: none;
+    }
+    &-inner {
+    }
+    &-content-holder {
+        text-align: right;
+        color: $green;
+        font-style: italic;
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-button-holder {
+
+    }
+}
+
+.cc-blockquote {
+    margin-bottom: rem-calc(15);
+    &>p, &>br {
+        display: none;
+    }
+    &-inner {
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-bg {
+        background-color: $green-opacity;
+        .cc-blockquote-inner {
+            padding: rem-calc(15);
+        }
+    }
+    &-border {
+        border: 1px solid $green;
+        .cc-blockquote-inner {
+            padding: rem-calc(25);
+            padding-left: rem-calc(55);
+        }
+    }
+    &-padding-left {
+        .cc-blockquote-inner {
+
+        }
+    }
+}
+
+.cc-references {
+    &>p, &>br {
+        display: none;
+    }
+    &-inner {
+        padding-left: rem-calc(15);
+        margin-top: rem-calc(20);
+        @include breakpoint(smedium) {
+            padding-left: rem-calc(25);
+            margin-top: rem-calc(35);
+        }
+        p, ol, ul {
+            color: $dark-gray;
+            font-size: rem-calc(12);
+        }
+    }
+}
+
+.cc-list {
+    &>p, &>br {
+        display: none;
+    }
+    &-inner {
+
+    }
+    &-dots, &-check {
+        ul {
+            margin-left: rem-calc(25);
+        }
+        ol {
+            margin-left: rem-calc(50);
+        }
+        h2, h3, h4, h5, h6, p {
+            margin-left: rem-calc(50);
+        }
+        ul {
+            list-style: none;
+            &>li {
+                position: relative;
+                padding-left: rem-calc(25);
+                margin-bottom: rem-calc(15);
+                &:before {
+                    font-family: FontAwesome;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    display: block;
+                    color: $green;
+                }
+            }
+        }
+        ol {
+            &>li {
+                margin-bottom: rem-calc(10);
+            }
+        }
+    }
+    &-dots {
+        ul {
+            &>li {
+                &:before {
+                    content: "\f111";
+                }
+            }
+        }
+    }
+    &-check {
+        ul {
+            &>li {
+                &:before {
+                    content: "\f00c";
+                }
+            }
+        }
+    }
+    &-underline {
+        ul, h2, h3, h4, h5, h6, p {
+            margin-left: rem-calc(25);
+        }
+        ul {
+            list-style: none;
+            &>li {
+                &:after {
+                    display: block;
+                    content: ' ';
+                    margin-top: rem-calc(10);
+                    margin-bottom: rem-calc(10);
+                    width: rem-calc(80);
+                    height: rem-calc(1);
+                    background-color: $green;
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cc-divider {
+    margin-top: rem-calc(15);
+    margin-bottom: rem-calc(15);
+    &>p, &>br {
+        display: none;
+    }
+    &-inner {
+        &:after {
+            display: block;
+            content: ' ';
+            width: rem-calc(250);
+        }
+    }
+    &-green {
+        height: rem-calc(1);
+        background-color: $green;
+    }
+    &-orange {
+        height: rem-calc(1);
+        background-color: $orange;
+    }
+    &-transparent {
+
+    }
+}
+
+.cc-simple-accordion {
+    &.accordion {
+        .accordion-item {
+            .accordion-title {
+                border: none;
+                padding: rem-calc(5 0);
+                p {
+                    margin-bottom: 0;
+                    font-size: rem-calc(14);
+                }
+                &:before {
+                    display: none;
+                }
+            }
+            .accordion-content {
+                border: none;
+            }
+            &:last-child > .accordion-content:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

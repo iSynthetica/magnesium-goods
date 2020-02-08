@@ -1,0 +1,14 @@
+{
+  "name": "nice-number",
+  "homepage": "https://github.com/joshua-s/jquery.nice-number",
+  "version": "1.0.2",
+  "_release": "1.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.2",
+    "commit": "22e74d3717410c76b81f5b597b371f23cc4f2a43"
+  },
+  "_source": "git://github.com/joshua-s/jquery.nice-number.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/joshua-s/jquery.nice-number"
+}

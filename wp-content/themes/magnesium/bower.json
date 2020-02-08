@@ -1,0 +1,24 @@
+{
+  "name": "jointswp",
+  "private": true,
+  "ignore": [],
+  "dependencies": {
+    "foundation-sites": "6.4.1",
+    "font-awesome": "git://github.com/FortAwesome/Font-Awesome#^4.7.0",
+    "lightgallery": "^1.6.5",
+    "lg-thumbnail": "^1.1.0",
+    "lg-autoplay": "^1.0.4",
+    "lg-video": "^1.2.0",
+    "lg-fullscreen": "^1.0.1",
+    "lg-pager": "^1.0.2",
+    "lg-zoom": "^1.1.0",
+    "lg-hash": "^1.0.3",
+    "lg-share": "^1.1.0",
+    "slick-carousel": "^1.8.1",
+    "select2": "^4.0.5",
+    "nice-number": "git://github.com/joshua-s/jquery.nice-number"
+  },
+  "devDependencies": {
+    "motion-ui": "^1.2.2"
+  }
+}

@@ -1,0 +1,63 @@
+
+/// Adds styles for a tab container. Apply this to a `<ul>`.
+@mixin tabs-container (
+  $margin: $tab-margin,
+  $background: $tab-background,
+  $border-color: $tab-content-border
+) {
+  @include clearfix;
+  margin: $margin;
+  border: none;
+  background: $background;
+  list-style-type: none;
+}
+
+/// Adds styles for the links within a tab container. Apply this to the `<li>` elements inside a tab container.
+@mixin tabs-title (
+  $padding: $tab-item-padding,
+  $font-size: $tab-item-font-size,
+  $color: $tab-color,
+  $color-active: $tab-active-color,
+  $background-hover: $tab-item-background-hover,
+  $background-active: $tab-background-active
+) {
+  float: #{$global-left};
+  border-left: 1px solid $background-active;
+  &:last-child {
+    border-right: 1px solid $background-active;
+  }
+
+  > a {
+    display: block;
+    padding: $padding;
+    font-size: $font-size;
+    font-weight: 700;
+    line-height: 1;
+    color: $color;
+
+    &:hover {
+      background: $background-hover;
+      color: $tab-active-color;
+    }
+
+    &:focus,
+    &[aria-selected='true'] {
+      background: $background-active;
+      color: $color-active;
+    }
+  }
+}
+
+/// Adds styles for the wrapper that surrounds a tab group's content panes.
+@mixin tabs-content (
+  $background: $tab-content-background,
+  $color: $tab-content-color,
+  $border-color: $tab-content-border,
+  $background-active: $tab-background-active
+) {
+  border: none;
+  border-top: 1px solid $background-active;
+  background: $background;
+  color: $color;
+  transition: all 0.5s ease;
+}
